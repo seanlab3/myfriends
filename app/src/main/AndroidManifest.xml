@@ -20,5 +20,19 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name="com.myfriend.chatbot.MainChatbotActivity"
+            android:exported="false"
+            android:configChanges="orientation|keyboardHidden"
+            >
+        </activity>
+        <activity
+            android:name="com.myfriend.chatbot.MainChatbotActivity2"
+            android:exported="false"
+            android:configChanges="orientation|keyboardHidden"
+            >
+        </activity>
+
     </application>
 </manifest>
