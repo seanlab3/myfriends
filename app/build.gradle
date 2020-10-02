@@ -16,8 +16,20 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
+    //appcompat
+    implementation 'androidx.appcompat:appcompat:1.0.0'
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.0.0"
+    implementation "androidx.recyclerview:recyclerview:1.0.0"
+    implementation 'androidx.exifinterface:exifinterface:1.0.0'
+    implementation 'com.google.android.gms:play-services:8.4.0'
+    implementation 'com.google.android.material:material:1.1.0-alpha06'
 }
+//apply plugin: 'com.google.gms.google-services'
